@@ -15,10 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  font-family: "MuseoModerno", sans-serif;
-}
-
 a {
   color: inherit;
   text-decoration: none;
