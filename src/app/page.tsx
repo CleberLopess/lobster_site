@@ -1,5 +1,11 @@
-import Hero from "../components/sections/hero-banner/hero-banner";
+import Hero from "../components/sections/hero-banner";
+import Footer from "../components/sections/footer";
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <Footer />
+    </>
+  );
 }

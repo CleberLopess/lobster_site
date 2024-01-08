@@ -1,5 +1,5 @@
 import { StoryFn } from "@storybook/react";
-import Hero from "../../../components/sections/hero-banner/hero-banner";
+import Hero from "../../../components/sections/hero-banner";
 
 export default {
   title: "Sections/Hero Banner",

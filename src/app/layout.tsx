@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles/tailwind.css";
+import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
