@@ -1,6 +1,6 @@
-import type { Preview } from "@storybook/react";
-import { themes } from "@storybook/theming";
-import "./global/styles.css";
+import { Preview } from "@storybook/react";
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import "../src/styles/tailwind-global.css";
 
 const preview: Preview = {
   parameters: {
@@ -11,9 +11,16 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    docs: {
-      theme: themes.dark,
-    },
+    decorators: [
+      withThemeByDataAttribute({
+        themes: {
+          light: "",
+          dark: "dark",
+        },
+        defaultTheme: "dark",
+        attributeName: "data-theme",
+      }),
+    ],
   },
 };
 
