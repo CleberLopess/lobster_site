@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       MuseoModerno: "MuseoModerno",
+      Poppins: "Poppins",
     },
     extend: {},
   },
