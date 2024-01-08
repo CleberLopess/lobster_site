@@ -10,6 +10,9 @@ module.exports = {
   ],
   darkMode: ["class", '[data-mode="dark"]'],
   theme: {
+    fontFamily: {
+      MuseoModerno: "MuseoModerno",
+    },
     extend: {},
   },
   plugins: [],
