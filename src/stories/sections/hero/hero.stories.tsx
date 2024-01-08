@@ -1,11 +1,13 @@
 import { StoryFn } from "@storybook/react";
-import Hero from "../../../components/sections/hero-banner";
+import HeroBanner from "../../../components/sections/hero-banner";
 
 export default {
   title: "Sections/Hero Banner",
-  component: Hero,
+  component: HeroBanner,
 };
 
-export const HeroBanner: StoryFn = (args) => <Hero {...args}></Hero>;
+export const HeroBanner_: StoryFn = (args) => (
+  <HeroBanner {...args}></HeroBanner>
+);
 
-HeroBanner.args = {};
+HeroBanner_.args = {};

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import arrowGif from "./assets/arrow-down.gif";
+import arrowGif from "./assets/gif-arrow.gif";
 
-const Hero = () => {
+const HeroBanner = () => {
   return (
-    <div className="flex min-h-svh items-center justify-center relative">
+    <div className="flex min-h-svh items-center justify-center relative bg-sky-400 ">
       <section className="container mx-auto flex items-center justify-center gap-6">
-        <div className="text-sky-500  font-MuseoModerno">
+        <div className="text-white  font-MuseoModerno">
           <span className="text-8xl">Cleber &quot;Lobster&quot;</span>
           <br />
           <span className="flex text-4xl w-full justify-end">
@@ -22,4 +22,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroBanner;
