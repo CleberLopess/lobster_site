@@ -1,5 +1,5 @@
 import { StoryFn } from "@storybook/react";
-import Bio from "../../../components/sections/bio";
+import Bio from "@/components/sections/bio";
 
 export default {
   title: "Sections/Bio",

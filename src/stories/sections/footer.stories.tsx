@@ -1,5 +1,5 @@
 import { StoryFn } from "@storybook/react";
-import Footer from "../../../components/sections/footer";
+import Footer from "@/components/sections/footer";
 
 export default {
   title: "Sections/Footer",
