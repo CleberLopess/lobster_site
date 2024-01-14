@@ -4,12 +4,14 @@ import me from "./assets/me.webp";
 const Bio = () => {
   return (
     <div className="flex w-dvw min-h-svh p-4 ">
-      <section className="container mx-auto flex flex-wrap items-center justify-center gap-3">
+      <section className="container mx-auto flex flex-wrap items-center justify-center gap-3 ">
         <div className="max-w-xl">
           <Image src={me} alt="Cleber Lopes" />
         </div>
         <div className="max-w-lg">
           <span className="font-Poppins text-sky-400 text-base">
+            <h2 className="text-center text-7xl">Sobre</h2>
+            <br /> <br />
             Olá! <br /> <br />
             Eu me chamo Cleber, mas algumas pessoas me conhecem como Lobster :D
             <br /> <br />
