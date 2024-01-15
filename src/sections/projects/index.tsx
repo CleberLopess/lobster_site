@@ -1,5 +1,5 @@
-import { CardModels } from "../../../components/card/card-models";
-import Card from "../../../components/card";
+import { CardModels } from "../../components/card/card-models";
+import Card from "../../components/card";
 
 const mock: CardModels[] = [
   {
