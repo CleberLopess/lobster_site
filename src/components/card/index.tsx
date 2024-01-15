@@ -1,17 +1,34 @@
+"use client";
 import Image from "next/image";
 import placeholder from "./assets/placeholder.png";
+import Stamp from "../stamp";
+import { CardModels } from "./card-models";
 
-const Card = () => {
+const Card = ({ image, stampTheme, title, description }: CardModels) => {
+  const getStamp = stampTheme?.map((item) => (
+    <Stamp key={item.theme} theme={item.theme} />
+  ));
+
+  const handleClickCard = () => {
+    return console.log("cliquei no card");
+  };
+
   return (
-    <div>
-      <div>
-        <Image src={placeholder} alt="placeholder" />
+    <div
+      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md transition-all duration-300 hover:cursor-pointer hover:shadow-xl bg-white text-black"
+      onClick={handleClickCard}
+    >
+      <div className="min-h-[129px] flex justify-center items-center">
+        <Image
+          className="rounded-lg rounded-b-none"
+          src={image ? image : placeholder}
+          alt="project"
+        />
       </div>
-      <div>
-        <h3>Titulo do card</h3>
-        <span>
-          Esse é um exemplo de texto curto para falar um pouco sobre o projeto
-        </span>
+      <div className=" flex flex-wrap gap-1 p-2">{getStamp}</div>
+      <div className="flex flex-col gap-1 p-2">
+        <h3 className="font-MuseoModerno text-2xl capitalize w-max">{title}</h3>
+        <span className="font-MuseoModerno text-sm">{description}</span>
       </div>
     </div>
   );
