@@ -1,3 +1,5 @@
+"use client";
+
 import HeroBanner from "../sections/hero-banner";
 import Bio from "../sections/bio";
 import Footer from "../sections/footer";

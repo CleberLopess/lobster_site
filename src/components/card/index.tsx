@@ -4,19 +4,21 @@ import placeholder from "./assets/placeholder.png";
 import Stamp from "../stamp";
 import { CardModels } from "./card-models";
 
-const Card = ({ image, stampTheme, title, description }: CardModels) => {
+const Card = ({
+  image,
+  stampTheme,
+  title,
+  description,
+  onClickCard,
+}: CardModels) => {
   const getStamp = stampTheme?.map((item) => (
     <Stamp key={item.theme} theme={item.theme} />
   ));
 
-  const handleClickCard = () => {
-    return console.log("cliquei no card");
-  };
-
   return (
     <div
       className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md transition-all duration-300 hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white text-black"
-      onClick={handleClickCard}
+      onClick={onClickCard}
     >
       <div className="min-h-[129px] flex justify-center items-center">
         <Image
