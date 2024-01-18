@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
 import { IcarrouselComponent } from "./models";
 import { settings } from "./configuration";
+import "./carrousel.css";
 
 const CarouselComponent = ({ children }: IcarrouselComponent) => {
   const [currentSlider, setCurrentSlider] = useState<Slider | null>();

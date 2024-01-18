@@ -52,7 +52,7 @@ const Projects = () => {
   ));
 
   return (
-    <div className="bg-sky-400 pb-20 pt-20">
+    <div className="bg-sky-400 pb-20 min-h-svh pt-20">
       <section className="container mx-auto flex flex-col gap-16 text-white">
         <div className="flex flex-col">
           <h2 className="text-center text-7xl">Projetos</h2>

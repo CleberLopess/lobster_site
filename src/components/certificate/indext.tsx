@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { cardCertificateType } from "./models";
 import placeholder from "./assets/placeholder.png";
+import externalIcon from "./assets/externalIcon.svg";
 
 const CardCertificate = ({
   handleClickCardCertificate,
@@ -14,6 +15,11 @@ const CardCertificate = ({
     >
       <Image src={image ? image : placeholder} alt="certificate" />
       <span className="flex text-center font-MuseoModerno">{title}</span>
+      <Image
+        className="flex justify-end mr-0 ml-auto w-5"
+        src={externalIcon}
+        alt="external-icon"
+      />
     </div>
   );
 };
