@@ -15,7 +15,7 @@ const Card = ({ image, stampTheme, title, description }: CardModels) => {
 
   return (
     <div
-      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md transition-all duration-300 hover:cursor-pointer hover:shadow-xl bg-white text-black"
+      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md transition-all duration-300 hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white text-black"
       onClick={handleClickCard}
     >
       <div className="min-h-[129px] flex justify-center items-center">

@@ -1,5 +1,5 @@
 import { StoryFn } from "@storybook/react";
-import Projects from "../../components/sections/projects";
+import Projects from "../../sections/projects";
 
 export default {
   title: "Sections/Projects",
