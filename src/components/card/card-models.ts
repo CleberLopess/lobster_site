@@ -5,5 +5,7 @@ export type CardModels = {
   image?: string;
   stampTheme: VariantProps<typeof stampTv>[];
   title: string;
+  shortDescription: string;
   description: string;
+  onClickCard?: () => void;
 };

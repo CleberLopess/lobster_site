@@ -1,5 +1,8 @@
-import { CardModels } from "../../components/card/card-models";
+import { useState } from "react";
 import Card from "../../components/card";
+import Modal from "../../components/modal";
+import Previewprojects from "../../components/preview-projects";
+import { CardModels } from "../../components/card/card-models";
 
 const mock: CardModels[] = [
   {
@@ -13,6 +16,8 @@ const mock: CardModels[] = [
     ],
     description:
       "Esse é um exemplo de texto curto para falar um pouco sobre o projeto",
+    shortDescription:
+      "Esse é um exemplo de texto curto para falar um pouco sobre o projeto",
   },
   {
     image: "",
@@ -24,6 +29,8 @@ const mock: CardModels[] = [
       { theme: "react" },
     ],
     description:
+      "Esse é um exemplo de texto curto para falar um pouco sobre o projeto",
+    shortDescription:
       "Esse é um exemplo de texto curto para falar um pouco sobre o projeto",
   },
   {
@@ -37,37 +44,62 @@ const mock: CardModels[] = [
     ],
     description:
       "Esse é um exemplo de texto curto para falar um pouco sobre o projeto ",
+    shortDescription:
+      "Esse é um exemplo de texto curto para falar um pouco sobre o projeto",
   },
 ];
 
 const Projects = () => {
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
+  const [contentPreview, setContentPreview] = useState<CardModels>();
+
+  const openModal = (data: CardModels) => {
+    setIsOpenModal(true);
+    setContentPreview(data);
+  };
+
   const getCards = mock.map((item) => (
     <Card
       key={item.title}
       title={item.title}
       description={item.description}
+      shortDescription={item.shortDescription}
       stampTheme={item.stampTheme}
       image={item.image}
+      onClickCard={() => openModal(item)}
     ></Card>
   ));
 
   return (
-    <div className="bg-sky-400 pb-20 min-h-svh pt-20">
-      <section className="container mx-auto flex flex-col gap-16 text-white">
-        <div className="flex flex-col">
-          <h2 className="text-center text-7xl">Projetos</h2>
-          <br />
-          <br />
-          <span className="text-center">
-            Aqui, voce vai saber sobre os projetos que ja participei, ao clicar
-            sobre os card voce verá um modal com mais explicação sobre cada
-            projeto incrivel!
-          </span>
-        </div>
+    <>
+      <div className="bg-sky-400 pb-20 min-h-svh pt-20">
+        <section className="container mx-auto flex flex-col gap-16 text-white">
+          <div className="flex flex-col">
+            <h2 className="text-center text-7xl">Projetos</h2>
+            <br />
+            <br />
+            <span className="text-center">
+              Aqui, voce vai saber sobre os projetos que ja participei, ao
+              clicar sobre os card voce verá um modal com mais explicação sobre
+              cada projeto incrivel!
+            </span>
+          </div>
 
-        <div className="flex gap-5 justify-center flex-wrap">{getCards}</div>
-      </section>
-    </div>
+          <div className="flex gap-5 justify-center flex-wrap">{getCards}</div>
+        </section>
+      </div>
+      <Modal
+        size="middle"
+        onClose={() => setIsOpenModal(false)}
+        isOpen={isOpenModal}
+      >
+        <Previewprojects
+          description={contentPreview?.description}
+          image={contentPreview?.image}
+          title={contentPreview?.title}
+        />
+      </Modal>
+    </>
   );
 };
 
