@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" theme-mode="">
+    <html lang="pt-br" theme-mode="dark">
       <head>
         <link rel="shortcut icon" href={lobsterLogo.src} />
       </head>
