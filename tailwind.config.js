@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,9 +8,24 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", '[data-mode="dark"]'],
+  darkMode: ["class", '[theme-mode="dark"]'],
   theme: {
     important: true,
+    colors: {
+      ...colors,
+      light: {
+        "bg-01": "#92C7CF",
+        "bg-02": "#AAD7D9",
+        "color-01": "#363062",
+        "color-02": "#E5E1DA",
+      },
+      dark: {
+        "bg-01": "#363062",
+        "bg-02": "#435585",
+        "color-01": "#BAC7EB",
+        "color-02": "#F5E8C7",
+      },
+    },
     screens: {
       sm: "480px",
       md: "768px",

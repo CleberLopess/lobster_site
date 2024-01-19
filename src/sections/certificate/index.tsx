@@ -21,16 +21,22 @@ const Certificates = () => {
   };
 
   return (
-    <section className="container m-auto pt-20 pb-20">
-      <div className="font-Poppins text-sky-400 text-base flex flex-col gap-4">
-        <h3 className=" text-center text-7xl">Certificados</h3>
-        <span className="text-center">
-          Aqui você verá meus certificados, classificados dos mais recentes ate
-          os mais antigos, ao clicar sobre um certificado, voce será levado para
-          a pagina onde ele foi emitido, convido voce a navegar entre eles!
-        </span>
+    <section
+      id="certificados"
+      className="p-8 md:p-16 bg-light-bg-02 text-light-color-01 dark:bg-dark-bg-02 dark:text-dark-color-01"
+    >
+      <div className="container m-auto pt-20 pb-20">
+        <div className="font-Poppins text-base flex flex-col gap-4">
+          <h2 className="text-4xl md:text-7xl text-center">Certificados</h2>
+          <p className="text-center">
+            Aqui você verá meus certificados, classificados dos mais recentes
+            ate os mais antigos, ao clicar sobre um certificado, voce será
+            levado para a pagina onde ele foi emitido, convido voce a navegar
+            entre eles!
+          </p>
+        </div>
+        <div className="m-auto">{setCertificates()}</div>
       </div>
-      <div className="m-auto">{setCertificates()}</div>
     </section>
   );
 };

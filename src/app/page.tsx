@@ -1,15 +1,17 @@
 "use client";
 
-import HeroBanner from "../sections/hero-banner";
+import Nav from "../components/nav";
+import Header from "../sections/header";
 import Bio from "../sections/bio";
-import Footer from "../sections/footer";
 import Projects from "../sections/projects";
-import Certificates from "@/sections/certificate";
+import Certificates from "../sections/certificate";
+import Footer from "../sections/footer";
 
 export default function Home() {
   return (
     <>
-      <HeroBanner />
+      <Nav />
+      <Header />
       <Bio />
       <Projects />
       <Certificates />

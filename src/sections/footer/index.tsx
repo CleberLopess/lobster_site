@@ -1,36 +1,34 @@
-import Image from "next/image";
-import linkedin from "./assets/linkedin.svg";
-import github from "./assets/github.svg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-sky-400 w-dvw">
-      <section className="container mx-auto p-4 flex items-center justify-between gap-6 transition-all duration-300 ">
-        <div className="font-MuseoModerno text-white">
-          <span className="text-2xl">Desenvolvido por Cleber Lopes</span>
-          <br />
+    <footer className="bg-light-bg-01 text-light-color-01 dark:bg-dark-bg-01 dark:text-dark-color-01 w-dvw">
+      <section className="container mx-auto p-4 flex items-center justify-between gap-6 ">
+        <div>
+          <h2 className="text-2xl">Desenvolvido por Cleber Lopes</h2>
           <span className="flex text-1xl w-full justify-end">
             Desenvolvedor Front-end
           </span>
         </div>
         <div className="flex gap-3">
           <a
-            className="w-6 hover:w-7 transition-all duration-300"
+            className="w-6 hover:scale-125"
             href="https://www.linkedin.com/in/cleber-lopess/"
             target="__black"
           >
-            <Image src={linkedin} alt="linkedin"></Image>
+            <FaLinkedin className="w-full h-full" />
           </a>
           <a
-            className="w-6 hover:w-7 transition-all duration-300"
+            className="w-6 hover:scale-125"
             href="https://github.com/CleberLopess"
             target="__black"
           >
-            <Image src={github} alt="github"></Image>
+            <FaGithub className="w-full h-full" />
           </a>
         </div>
       </section>
-    </div>
+    </footer>
   );
 };
 
