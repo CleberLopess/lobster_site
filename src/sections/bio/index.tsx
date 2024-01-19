@@ -3,14 +3,17 @@ import me from "./assets/me.webp";
 
 const Bio = () => {
   return (
-    <div className="flex w-dvw min-h-svh p-4 ">
-      <section className="container mx-auto flex flex-wrap items-center justify-center gap-3 ">
-        <div className="max-w-xl">
-          <Image src={me} alt="Cleber Lopes" />
+    <section
+      id="bio"
+      className="flex w-dvw min-h-svh p-8 md:p-16 bg-light-bg-02 dark:bg-dark-bg-02"
+    >
+      <div className="container mx-auto flex flex-wrap items-center justify-center gap-3 ">
+        <div className="max-w-md">
+          <Image className="w-full h-full" src={me} alt="Cleber Lopes" />
         </div>
-        <div className="max-w-lg">
-          <span className="font-Poppins text-sky-400 text-base">
-            <h2 className="text-center text-7xl">Sobre</h2>
+        <div className="max-w-lg font-Poppins text-base text-light-color-01 dark:text-dark-color-01">
+          <h2 className="text-center text-4xl md:text-7xl">Sobre</h2>
+          <p>
             <br /> <br />
             Olá! <br /> <br />
             Eu me chamo Cleber, mas algumas pessoas me conhecem como Lobster :D
@@ -23,10 +26,10 @@ const Bio = () => {
             <br /> <br />
             Abaixo, voce pode conferir algum dos projetos que ja fiz parte ou
             foi desenvolvido completamente por mim.
-          </span>
+          </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

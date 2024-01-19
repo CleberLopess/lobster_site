@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 export const stampTv = tv({
-  base: "font-MuseoModerno text-xs text-white p-2 pt-1 pb-1 font-medium capitalize w-fit rounded-full transition-all duration-300 hover:cursor-default",
+  base: "text-xs text-white p-2 pt-1 pb-1 font-medium capitalize w-fit rounded-full hover:cursor-default",
   variants: {
     theme: {
       css: "bg-blue-500 hover:bg-blue-700",
@@ -33,7 +33,7 @@ const Stamp = ({ theme }: VariantProps<typeof stampTv>) => {
     [theme]
   );
 
-  return <div className={stampTv({ theme })}>{getLabel}</div>;
+  return <h3 className={stampTv({ theme })}>{getLabel}</h3>;
 };
 
 export default Stamp;

@@ -9,16 +9,16 @@ const CarouselComponent = ({ children }: IcarrouselComponent) => {
   const [currentSlider, setCurrentSlider] = useState<Slider | null>();
 
   return (
-    <div className="p-8 relative">
+    <div className="pt-8 md:p-8 relative">
       <Slider ref={(ref) => setCurrentSlider(ref)} {...settings}>
         {children}
       </Slider>
       <HiArrowCircleRight
-        className="absolute top-1/2 right-0 w-10 h-10 z-[1] flex justify-center items-center opacity-30 hover:opacity-100 cursor-pointer z-20"
+        className="hidden md:flex justify-center items-center absolute top-1/2 -right-4 w-10 h-10 z-[1] opacity-30 hover:opacity-100 cursor-pointer z-20"
         onClick={currentSlider?.slickNext}
       />
       <HiArrowCircleLeft
-        className="absolute top-1/2 left-0 w-10 h-10 z-[1] flex justify-center items-center opacity-30 hover:opacity-100 cursor-pointer z-20"
+        className="hidden md:flex justify-center items-center absolute top-1/2 -left-9 w-10 h-10 z-[1] opacity-30 hover:opacity-100 cursor-pointer z-20"
         onClick={currentSlider?.slickPrev}
       />
     </div>

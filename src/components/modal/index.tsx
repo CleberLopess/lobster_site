@@ -45,7 +45,7 @@ const Modal = ({ onClose, size, isOpen = false, children }: modalType) => {
     >
       <div className={modalTv({ size })}>
         <div
-          className="flex mr-0 ml-auto bg-white p-1 rounded-full transition-all duration-300 cursor-pointer hover:scale-110"
+          className="flex mr-0 ml-auto bg-white p-1 rounded-full cursor-pointer hover:scale-110"
           onClick={handleCloseModal}
         >
           <IoCloseOutline />

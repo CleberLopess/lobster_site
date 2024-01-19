@@ -6,6 +6,8 @@ export const settings: Settings = {
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 1,
+  arrows: false,
+  centerMode: false,
   responsive: [
     {
       breakpoint: 1450,
@@ -17,15 +19,18 @@ export const settings: Settings = {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        dots: false,
       },
     },
     {
       breakpoint: 768,
       settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
         slidesToShow: 1,
-        centerMode: true,
-        dots: false,
       },
     },
   ],

@@ -15,7 +15,7 @@ const Previewprojects = ({
         className="object-cover h-36 w-full md:w-1/3 md:h-full"
       />
       <div className="flex flex-col gap-4 p-2">
-        <h3 className="font-MuseoModerno text-xl capitalize">{title}</h3>
+        <h3 className="text-xl capitalize">{title}</h3>
         <span className="text-left">{description}</span>
       </div>
     </div>
