@@ -104,7 +104,7 @@ const Nav = () => {
     return (
       <div className="hidden md:flex container w-full relative font-Poppins items-center">
         <Image
-          className="absolute w-12 left-2/4 m-auto"
+          className="absolute w-12 left-0 right-0 m-auto"
           src={lobsterLogo}
           alt="lobster"
         />
@@ -133,7 +133,9 @@ const Nav = () => {
 
   return (
     <nav
-      className={`flex justify-center items-center w-full min-h-[72px] fixed p-4 top-0 left-0 z-2 shadow-md bg-light-bg-02  dark:bg-dark-bg-02 `}
+      className={`flex justify-center items-center w-full min-h-[72px] fixed p-4 top-0 left-0 z-2 shadow-md bg-light-bg-02  dark:bg-dark-bg-02 ${
+        isOpen && "z-9"
+      }`}
     >
       {navMobile()}
       {navDesktop()}

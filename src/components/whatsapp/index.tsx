@@ -19,7 +19,7 @@ const Whatsapp = () => {
   return (
     <a
       id="whatsapp-icon"
-      className="w-16 h-16 z-8 fixed bottom-9 right-9"
+      className="w-16 h-16 z-8 fixed bottom-28 md:bottom-9 right-9"
       href="https://wa.me/5521991052878?text=Oi%2C+eu+vim+pelo+teu+site%2C+gostaria+de+falar+com+o+Cleber+desenvolvedor+front-end"
       target="__blanck"
     >
