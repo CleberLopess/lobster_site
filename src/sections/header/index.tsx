@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="flex min-h-svh p-8 md:p-16 items-center justify-center relative bg-light-bg-01 dark:bg-dark-bg-01 ">
       <section className="container mx-auto flex items-center justify-center gap-6">
-        <div className="flex flex-col justify-center text-light-color-01 dark:text-dark-color-01 ">
+        <div className="flex flex-col justify-center   ">
           <h1 className="text-start text-5xl md:text-8xl">
             Cleber &quot;Lobster&quot;
           </h1>
