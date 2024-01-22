@@ -1,7 +1,6 @@
 import { StoryFn } from "@storybook/react";
 import { VariantProps } from "tailwind-variants";
 import Stamp, { stampTv } from "../../components/stamp";
-import { modalType } from "../../components/modal/modal.models";
 
 export default {
   title: "Components/Stamp",

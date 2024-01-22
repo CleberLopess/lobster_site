@@ -74,9 +74,9 @@ const Projects = () => {
     <>
       <section
         id="projetos"
-        className="p-16 md:p-32 pb-20 min-h-svh pt-20 bg-light-bg-01 dark:bg-dark-bg-01"
+        className="flex justify-center items-center p-16 md:p-32 pb-20 min-h-svh pt-20 bg-light-bg-01 dark:bg-dark-bg-01 "
       >
-        <div className="container mx-auto flex flex-col gap-16 text-light-color-01 dark:text-dark-color-01">
+        <div className="container mx-auto flex flex-col gap-16  ">
           <div className="flex flex-col">
             <h2 className="text-center text-4xl md:text-7xl">Projetos</h2>
             <br />

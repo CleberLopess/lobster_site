@@ -39,3 +39,10 @@ a {
     font-family: "MuseoModerno";
   }
 }
+
+@layer components {
+  * {
+    @apply text-light-color-01;
+    @apply dark:text-dark-color-01;
+  }
+}
