@@ -23,7 +23,7 @@ const Certificates = () => {
   return (
     <section
       id="certificados"
-      className="p-8 md:p-16 bg-light-bg-02 text-light-color-01 dark:bg-dark-bg-02 dark:text-dark-color-01"
+      className="flex justify-center items-center p-8 md:p-16 bg-light-bg-02  dark:bg-dark-bg-02 "
     >
       <div className="container m-auto pt-20 pb-20">
         <div className="font-Poppins text-base flex flex-col gap-4">

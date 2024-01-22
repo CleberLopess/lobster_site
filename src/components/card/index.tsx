@@ -17,7 +17,7 @@ const Card = ({
 
   return (
     <div
-      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 backdrop-blur-sm bg-white text-light-color-01 dark:bg-dark-bg-02 dark:text-dark-color-01"
+      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
       onClick={onClickCard}
     >
       <div className="min-h-[128px] flex justify-center items-center">
