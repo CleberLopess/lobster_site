@@ -2,6 +2,7 @@ import { tv } from "tailwind-variants";
 import { modalType } from "./modal.models";
 import { IoClose } from "react-icons/io5";
 import { useCallback, useEffect } from "react";
+import { removeScroll } from "../../../utils/functions";
 
 export const modalTv = tv({
   base: "flex flex-col gap-4",
@@ -18,14 +19,9 @@ export const modalTv = tv({
 });
 
 const Modal = ({ onClose, size, isOpen = false, children }: modalType) => {
-  const removeScroll = useCallback(() => {
-    if (isOpen) document.documentElement.style.overflow = "hidden";
-    if (!isOpen) document.documentElement.style.overflow = "";
-  }, [isOpen]);
-
   useEffect(() => {
-    removeScroll();
-  }, [removeScroll]);
+    removeScroll(isOpen);
+  }, [isOpen]);
 
   const stopPropagation = (ev: MouseEvent | any) => {
     ev.stopPropagation();

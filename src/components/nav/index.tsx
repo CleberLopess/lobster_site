@@ -7,10 +7,15 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import lobsterLogo from "../../../public/lobster-not-botton.png";
 import Button from "../button";
+import { removeScroll } from "../../../utils/functions";
 
 const Nav = () => {
   const [themeMode, setThemeMode] = useState<themeModeEnum>(themeModeEnum.DARK);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    removeScroll(isOpen);
+  }, [isOpen]);
 
   const setIconButton = useCallback(() => {
     switch (themeMode) {
