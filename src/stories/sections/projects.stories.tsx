@@ -10,5 +10,3 @@ export default {
 };
 
 export const Projects_: StoryFn = (args) => <Projects {...args}></Projects>;
-
-Projects_.args = {};

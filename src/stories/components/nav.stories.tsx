@@ -9,6 +9,6 @@ export default {
   },
 };
 
-export const Header_: StoryFn = (args) => <Nav {...args}></Nav>;
+export const Nav_: StoryFn = (args) => <Nav {...args}></Nav>;
 
-Header_.args = {};
+Nav_.args = {};

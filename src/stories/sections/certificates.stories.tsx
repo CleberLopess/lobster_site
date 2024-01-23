@@ -12,5 +12,3 @@ export default {
 export const Certificates_: StoryFn = (args) => (
   <Certificates {...args}></Certificates>
 );
-
-Certificates_.args = {};

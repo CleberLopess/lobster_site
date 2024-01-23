@@ -18,7 +18,7 @@ const Header = () => {
       <Image
         className="w-20 flex justify-center absolute bottom-0"
         src={arrowGif}
-        alt=""
+        alt="arrow grif"
       />
     </header>
   );

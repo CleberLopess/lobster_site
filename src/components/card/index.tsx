@@ -20,7 +20,7 @@ const Card = ({
       className="flex flex-col gap-2 max-w-64  rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
       onClick={onClickCard}
     >
-      <div className="min-h-[128px] flex justify-center items-center">
+      <div className="h-[128px] flex justify-center">
         <Image
           className="rounded-lg rounded-b-none"
           src={image ? image : placeholder}
