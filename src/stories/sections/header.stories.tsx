@@ -9,6 +9,4 @@ export default {
   },
 };
 
-export const Footer_: StoryFn = (args) => <Header {...args}></Header>;
-
-Footer_.args = {};
+export const Header_: StoryFn = (args) => <Header {...args}></Header>;

@@ -10,10 +10,10 @@ export default {
   },
 };
 
-export const Stamp_: StoryFn<ButtonType> = (args) => (
+export const Button_: StoryFn<ButtonType> = (args) => (
   <Button {...args}>Baixar cv</Button>
 );
 
-Stamp_.args = {
+Button_.args = {
   href: "../../../static/curriculo-cleber.pdf",
 };

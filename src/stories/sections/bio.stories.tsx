@@ -10,5 +10,3 @@ export default {
 };
 
 export const Bio_: StoryFn = (args) => <Bio {...args}></Bio>;
-
-Bio_.args = {};

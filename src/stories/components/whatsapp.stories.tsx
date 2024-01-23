@@ -9,4 +9,4 @@ export default {
   },
 };
 
-export const Stamp_: StoryFn = () => <Whatsapp />;
+export const Whatsapp_: StoryFn = () => <Whatsapp />;

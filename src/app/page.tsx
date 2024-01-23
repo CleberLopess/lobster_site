@@ -2,6 +2,7 @@
 
 import Nav from "../components/nav";
 import Header from "../sections/header";
+import Technologies from "../sections/technologies";
 import Bio from "../sections/bio";
 import Projects from "../sections/projects";
 import Certificates from "../sections/certificate";
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Nav />
       <Header />
+      <Technologies />
       <Bio />
       <Projects />
       <Certificates />

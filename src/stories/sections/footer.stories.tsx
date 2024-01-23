@@ -10,5 +10,3 @@ export default {
 };
 
 export const Footer_: StoryFn = (args) => <Footer {...args}></Footer>;
-
-Footer_.args = {};
