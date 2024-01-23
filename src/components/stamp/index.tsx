@@ -20,6 +20,8 @@ export const stampTv = tv({
       stencil: "bg-black hover:bg-gray-600",
       tailwind: "bg-blue-400 hover:bg-blue-600",
       typescript: "bg-blue-500 hover:bg-blue-700",
+      storybook: "bg-pink-500 hover:bg-pink-700",
+      graphqL: "bg-pink-700 hover:bg-pink-900",
     },
   },
   defaultVariants: {

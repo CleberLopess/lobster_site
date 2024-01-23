@@ -1,6 +1,6 @@
 import { tv } from "tailwind-variants";
 import { modalType } from "./modal.models";
-import { IoCloseOutline } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { useCallback, useEffect } from "react";
 
 export const modalTv = tv({
@@ -45,10 +45,10 @@ const Modal = ({ onClose, size, isOpen = false, children }: modalType) => {
     >
       <div className={modalTv({ size })}>
         <div
-          className="flex mr-0 ml-auto bg-white p-1 rounded-full cursor-pointer hover:scale-110"
+          className="flex mr-0 ml-auto bg-white  p-1 rounded-full cursor-pointer hover:scale-110"
           onClick={handleCloseModal}
         >
-          <IoCloseOutline />
+          <IoClose className="text-light-color-01" />
         </div>
         <div
           className="rounded-md bg-white h-full w-full"

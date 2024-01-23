@@ -41,7 +41,7 @@ a {
 }
 
 @layer components {
-  * {
+  *:not(svg, path) {
     @apply text-light-color-01;
     @apply dark:text-dark-color-01;
   }
