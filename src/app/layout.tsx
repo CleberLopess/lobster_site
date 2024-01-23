@@ -4,6 +4,7 @@ import cover from "../../public/cover.png";
 import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   applicationName: "Portifólio",
   title: "Lobster Site",
   description: "Desenvolvedor front-end",

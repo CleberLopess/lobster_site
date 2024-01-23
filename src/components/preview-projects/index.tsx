@@ -14,7 +14,7 @@ const Previewprojects = ({
         src={image ? image : placeholder}
         alt="project-ilustration"
       />
-      <div className="flex flex-col gap-4 p-2">
+      <div className="flex flex-col gap-4 p-2 overflow-auto">
         <h3 className="text-xl capitalize  text-light-color-01">{title}</h3>
         <span className="text-left  text-light-color-01">{description}</span>
       </div>

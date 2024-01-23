@@ -17,7 +17,8 @@ const Bio = () => {
           <p>
             <br /> <br />
             Olá! <br /> <br />
-            Eu me chamo Cleber, mas algumas pessoas me conhecem como Lobster :D
+            Olá! Eu me chamo Cleber, mas algumas pessoas me conhecem como
+            Lobster :D
             <br /> <br />
             Sou um desenvolvedor front-end apaixonado por criar experiências
             digitais excepcionais. Com mais de 3 anos de experiência, mergulhei
@@ -25,8 +26,8 @@ const Bio = () => {
             interativas e visualmente atraentes. Minha jornada tem sido marcada
             por projetos desafiadores e colaborações inspiradoras.
             <br /> <br />
-            Abaixo, voce pode conferir algum dos projetos que ja fiz parte ou
-            foi desenvolvido completamente por mim.
+            Abaixo, você pode conferir alguns dos projetos dos quais já fiz
+            parte ou que foram desenvolvidos completamente por mim.
           </p>
           <br /> <br />
           <Button href="../../../static/curriculo-cleber.pdf" target="__blanck">
