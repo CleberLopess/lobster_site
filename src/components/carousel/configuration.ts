@@ -3,7 +3,7 @@ import { Settings } from "react-slick";
 export const settings: Settings = {
   className: "relative",
   dots: true,
-  infinite: true,
+  infinite: false,
   slidesToShow: 5,
   slidesToScroll: 1,
   arrows: false,

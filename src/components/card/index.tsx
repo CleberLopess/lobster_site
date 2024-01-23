@@ -8,7 +8,7 @@ const Card = ({
   image,
   stampTheme,
   title,
-  description,
+  shortDescription,
   onClickCard,
 }: CardModels) => {
   const getStamp = stampTheme?.map((item) => (
@@ -17,7 +17,7 @@ const Card = ({
 
   return (
     <div
-      className="flex flex-col gap-2 max-w-64 h-80 rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
+      className="flex flex-col gap-2 max-w-64  rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
       onClick={onClickCard}
     >
       <div className="min-h-[128px] flex justify-center items-center">
@@ -29,8 +29,8 @@ const Card = ({
       </div>
       <div className=" flex flex-wrap gap-1 p-2">{getStamp}</div>
       <div className="flex flex-col gap-1 p-2">
-        <h3 className="text-2xl capitalize w-max">{title}</h3>
-        <span className="text-sm">{description}</span>
+        <h3 className="text-2xl capitalize">{title}</h3>
+        <span className="text-sm">{shortDescription}</span>
       </div>
     </div>
   );

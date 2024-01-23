@@ -10,13 +10,13 @@ const Previewprojects = ({
   return (
     <div className="flex flex-col w-full h-full md:flex-row">
       <Image
+        className="object-cover h-48 w-full md:w-2/3 md:h-full"
         src={image ? image : placeholder}
         alt="project-ilustration"
-        className="object-cover h-36 w-full md:w-1/3 md:h-full"
       />
       <div className="flex flex-col gap-4 p-2">
-        <h3 className="text-xl capitalize">{title}</h3>
-        <span className="text-left">{description}</span>
+        <h3 className="text-xl capitalize  text-light-color-01">{title}</h3>
+        <span className="text-left  text-light-color-01">{description}</span>
       </div>
     </div>
   );

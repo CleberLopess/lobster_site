@@ -2,7 +2,7 @@
 
 import CarouselComponent from "../../components/carousel";
 import CardCertificate from "../../components/certificate/indext";
-import { mockCertificate } from "./mock";
+import { mockCertificate } from "./certificate.mock";
 
 const Certificates = () => {
   const setCertificates = () => {
@@ -29,13 +29,14 @@ const Certificates = () => {
         <div className="font-Poppins text-base flex flex-col gap-4">
           <h2 className="text-4xl md:text-7xl text-center">Certificados</h2>
           <p className="text-center">
-            Aqui você verá meus certificados, classificados dos mais recentes
-            ate os mais antigos, ao clicar sobre um certificado, voce será
-            levado para a pagina onde ele foi emitido, convido voce a navegar
-            entre eles!
+            Na seção a seguir, exibo meus certificados, dispostos do mais
+            recente ao mais antigo. Convido você a explorá-los e percorrer essa
+            trajetória! <br />
+            (Para acessar a página de emissão, clique no ícone localizado no
+            rodapé do card.)
           </p>
         </div>
-        <div className="m-auto">{setCertificates()}</div>
+        {setCertificates()}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import lobsterLogo from "../../public/lobster-not-botton.png";
+import cover from "../../public/cover.png";
 import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
@@ -16,8 +17,18 @@ export const metadata: Metadata = {
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
     images: {
-      url: lobsterLogo.src,
+      url: cover.src,
       alt: "cleber logo",
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lobster Site",
+    description: "Desenvolvedor front-end",
+    creator: "Cleber Lopes",
+    images: {
+      url: cover.src,
+      alt: "cover",
     },
   },
 };
