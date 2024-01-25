@@ -21,9 +21,9 @@ export const projectsMock: CardModels[] = [
       { theme: "storybook" },
     ],
     shortDescription:
-      "Participo diretamente na criação da pagina principal e das paginas internas do site do ProEnem e do ProMilitares",
+      "Meu portfólio foi concebido não apenas para destacar minhas habilidades, mas também para despertar o interesse do público em relação ao meu trabalho.",
     description:
-      "Participo diretamente na criação da pagina principal e das paginas internas do site do ProEnem e do ProMilitares, utilizando como principais ferramentas, TypeScript, React, Git, CSS, HTML, Gatsby, WordPress, FireBase, tudo isso incrementado pelo método de trabalho ágil, utilizando o scrun como principal ",
+      "Além de despertar o interesse do público, esse projeto foi uma evidência prática de que, com perseverança e entusiasmo, podemos aprender algo novo e aplicar nossas habilidades com excelência. Desenvolvi todo o projeto utilizando o Tailwind CSS, uma ferramenta inovadora tanto para mim quanto para as minhas habilidades.",
   },
   {
     image: prodigio,
