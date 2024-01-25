@@ -40,6 +40,11 @@ a {
   }
 }
 
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
 @layer components {
   *:not(svg, path) {
     @apply text-light-color-01;
