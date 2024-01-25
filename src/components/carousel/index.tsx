@@ -18,7 +18,7 @@ const CarouselComponent = ({ children }: IcarrouselComponent) => {
         onClick={currentSlider?.slickNext}
       />
       <HiArrowCircleLeft
-        className="hidden md:flex justify-center items-center absolute top-1/2 -left-9 w-10 h-10 z-[1] opacity-30 hover:opacity-100 cursor-pointer z-20"
+        className="hidden md:flex justify-center items-center absolute top-1/2 -left-4 w-10 h-10 z-[1] opacity-30 hover:opacity-100 cursor-pointer z-20"
         onClick={currentSlider?.slickPrev}
       />
     </div>
