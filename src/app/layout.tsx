@@ -17,20 +17,14 @@ export const metadata: Metadata = {
     description: "Desenvolvedor front-end",
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
-    images: {
-      url: cover.src,
-      alt: "cleber logo",
-    },
+    images: [cover.src],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lobster Site",
     description: "Desenvolvedor front-end",
     creator: "Cleber Lopes",
-    images: {
-      url: cover.src,
-      alt: "cover",
-    },
+    images: [cover.src],
   },
 };
 
