@@ -1,6 +1,7 @@
 import Image from "next/image";
 import me from "./assets/me.webp";
 import Button from "../../components/button";
+import Stamp from "@/components/stamp";
 
 const Bio = () => {
   return (
@@ -14,22 +15,32 @@ const Bio = () => {
         </div>
         <div className="max-w-lg font-Poppins text-base  ">
           <h2 className="text-center text-4xl md:text-7xl">Sobre</h2>
-          <p>
-            <br /> <br />
-            Olá! <br /> <br />
-            Olá! Eu me chamo Cleber, mas algumas pessoas me conhecem como
-            Lobster :D
-            <br /> <br />
-            Sou um desenvolvedor front-end apaixonado por criar experiências
-            digitais excepcionais. Com mais de 3 anos de experiência, mergulhei
-            profundamente no mundo do desenvolvimento web, entregando soluções
-            interativas e visualmente atraentes. Minha jornada tem sido marcada
-            por projetos desafiadores e colaborações inspiradoras.
-            <br /> <br />
-            Abaixo, você pode conferir alguns dos projetos dos quais já fiz
-            parte ou que foram desenvolvidos completamente por mim.
-          </p>
-          <br /> <br />
+          <div className="mt-16">
+            <p>
+              Olá! <br /> <br />
+              Eu me chamo Cleber e sou Desenvolvedor Front-End com 4 anos de
+              experiência Especializado em criar interfaces visuais rápidas e
+              fluidas, concentro-me em soluções impactantes usando:
+              <br /> <br />
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Stamp theme="javascript" />
+              <Stamp theme="css" />
+              <Stamp theme="tailwind" />
+              <Stamp theme="html" />
+              <Stamp theme="react" />
+              <Stamp theme="git" />
+              <Stamp theme="next" />
+              <Stamp theme="storybook" />
+            </div>
+            <p>
+              <br />
+              Experiência em revisão de código, atualização de legados e
+              aplicação de Clean Code. Ágil com Scrum.
+              <br />
+              <br />
+            </p>
+          </div>
           <Button href="../../../static/curriculo-cleber.pdf" target="__blanck">
             Baixar CV
           </Button>
