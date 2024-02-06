@@ -1,4 +1,5 @@
 import { cardCertificateType } from "../../components/certificate/models";
+import certificateHeroCode from "./assets/certificate-herocode.png";
 import certificateFlutter from "./assets/certificate-flutter.jpg";
 import certificateAngular from "./assets/certificate-angular.jpg";
 import certificateVsCode from "./assets/certificate-vscode.jpg";
@@ -9,6 +10,15 @@ import certificateOrganização from "./assets/certificate-organizaçãoDeEquipe
 import certificateScrum from "./assets/certificate-scrum.png";
 
 export const mockCertificate: cardCertificateType[] = [
+  {
+    handleClickCardCertificate: () =>
+      window.open(
+        "https://herocode.com.br/api/certificate/?id=07505af0-09f0-4649-80ec-b84a991f1614",
+        "blank"
+      ),
+    image: certificateHeroCode,
+    title: "Sistema com Comunicação em tempo real",
+  },
   {
     handleClickCardCertificate: () =>
       window.open("https://www.cod3r.com.br/certificates/nxupnkdzkm", "blank"),
