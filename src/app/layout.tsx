@@ -9,22 +9,33 @@ export const metadata: Metadata = {
   description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
   creator: "Cleber Lopes",
   generator: "Next.js",
-  keywords: "portifolio, cleber lopes, desenvolvedor, front-end",
+  keywords: "portifolio, cleber lopes, desenvolvedor, front-end, lobster",
   publisher: "Vercel",
   openGraph: {
+    url: "https://lobster-site.vercel.app/",
     title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creators: "Cleber Lopes",
-    emails: "cleberlopes777@gmail.com",
-    images: "public/cover.png",
-    url: "https://lobster-site.vercel.app/",
+    images: [
+      {
+        url: "https://lobster-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
+        width: 800,
+        height: 600,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creator: "Cleber Lopes",
-    images: "public/cover.png",
+    images: [
+      {
+        url: "https://lobster-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
+        width: 800,
+        height: 600,
+      },
+    ],
   },
 };
 
