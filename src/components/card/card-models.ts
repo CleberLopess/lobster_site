@@ -4,9 +4,9 @@ import { StaticImageData } from "next/image";
 
 export type CardModels = {
   image: StaticImageData;
-  stampTheme: VariantProps<typeof stampTv>[];
+  stampTheme?: VariantProps<typeof stampTv>[];
   title: string;
-  shortDescription: string;
-  description: string;
+  shortDescription?: string;
+  description?: string;
   onClickCard?: () => void;
 };

@@ -1,13 +1,14 @@
 "use client";
 
-import Nav from "../components/nav";
-import Header from "../sections/header";
-import Technologies from "../sections/technologies";
-import Bio from "../sections/bio";
-import Projects from "../sections/projects";
-import Certificates from "../sections/certificate";
-import Footer from "../sections/footer";
-import Whatsapp from "../components/whatsapp";
+import Nav from "@/components/nav";
+import Header from "@/sections/header";
+import Technologies from "@/sections/technologies";
+import Bio from "@/sections/bio";
+import Projects from "@/sections/projects";
+import Certificates from "@/sections/certificate";
+import Articles from "@/sections/articles";
+import Footer from "@/sections/footer";
+import Whatsapp from "@/components/whatsapp";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Bio />
       <Projects />
       <Certificates />
+      <Articles />
       <Footer />
       <Whatsapp />
     </>

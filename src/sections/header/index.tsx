@@ -1,5 +1,6 @@
 import Image from "next/image";
 import arrowGif from "./assets/gif-arrow.gif";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -15,12 +16,7 @@ const Header = () => {
           </span>
         </div>
       </section>
-      <Image
-        className="w-20 flex justify-center absolute bottom-0"
-        src={arrowGif}
-        alt="arrow grif"
-        loading="lazy"
-      />
+      <MdKeyboardDoubleArrowDown className="w-14 h-14 flex justify-center absolute bottom-10 animate-bounce" />
     </header>
   );
 };

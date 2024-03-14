@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center items-center bg-light-bg-01  dark:bg-dark-bg-01  w-dvw">
+    <footer className="flex justify-center items-center bg-light-bg-02  dark:bg-dark-bg-02  w-dvw">
       <div className="container mx-auto p-4 flex items-center justify-between gap-6 ">
         <div>
           <h2 className="text-2xl">Desenvolvido por Cleber Lopes</h2>

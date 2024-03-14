@@ -32,18 +32,16 @@ const Projects = () => {
     <>
       <section
         id="projetos"
-        className="flex justify-center items-center p-16 md:p-32 pb-20 min-h-svh pt-20 bg-light-bg-01 dark:bg-dark-bg-01 "
+        className="flex justify-center items-center bg-light-bg-01 dark:bg-dark-bg-01 "
       >
-        <div className="container mx-auto flex flex-col gap-16  ">
-          <div className="flex flex-col">
-            <h2 className="text-center text-4xl md:text-7xl">Projetos</h2>
-            <br />
-            <br />
-            <span className="text-center">
+        <div className="container py-20 mx-auto flex flex-col gap-16">
+          <div className="flex flex-col gap-8">
+            <h2>Projetos</h2>
+            <p className="text-center">
               Aqui, voce vai saber sobre os projetos que ja participei, ao
               clicar sobre os card voce verá um modal com mais explicação sobre
               cada projeto incrivel!
-            </span>
+            </p>
           </div>
 
           <div className="flex gap-5 justify-center flex-wrap">{getCards}</div>

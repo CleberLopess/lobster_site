@@ -9,7 +9,7 @@ const CarouselComponent = ({ children }: IcarrouselComponent) => {
   const [currentSlider, setCurrentSlider] = useState<Slider | null>();
 
   return (
-    <div className="pt-8 md:p-8 relative">
+    <div className="md:px-8 relative">
       <Slider ref={(ref) => setCurrentSlider(ref)} {...settings}>
         {children}
       </Slider>
