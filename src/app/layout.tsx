@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
-    images: "/public/cover.png",
+    images: "../../public/cover.png",
   },
   twitter: {
     card: "summary_large_image",
     title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creator: "Cleber Lopes",
-    images: "/public/cover.png",
+    images: "../../public/cover.png",
   },
 };
 

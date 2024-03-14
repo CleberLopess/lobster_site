@@ -18,13 +18,17 @@ const PreviewCard = ({ url, onClickCard }: PreviewCardTypes) => {
 
   return (
     <div
-      className="flex flex-col gap-2 max-w-72 rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
+      className="flex flex-col gap-2 max-w-72 h-full rounded-lg shadow-md  hover:cursor-pointer hover:shadow-xl hover:scale-105 bg-white  dark:bg-dark-bg-02 "
       onClick={onClickCard}
     >
       {preview && (
         <>
           {preview.images.length > 0 && (
-            <img src={preview.images[0]} alt="Preview" />
+            <img
+              className="w-full h-36 object-cover"
+              src={preview.images[0]}
+              alt="Preview"
+            />
           )}
           <div className="p-2">
             <h3>{preview.title}</h3>
