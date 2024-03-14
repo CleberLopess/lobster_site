@@ -38,6 +38,10 @@ a {
   h3 {
     font-family: "MuseoModerno";
   }
+
+  h2 {
+    @apply text-center text-4xl md:text-7xl;
+  }
 }
 
 .slick-slide > div {

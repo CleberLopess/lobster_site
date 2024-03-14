@@ -3,16 +3,15 @@ import lobsterLogo from "/public/lobster-not-botton.png";
 import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
   applicationName: "Portifólio Cleber Lopes",
-  title: "Lobster Site - Cleber Lopes",
+  title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
   description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
   creator: "Cleber Lopes",
   generator: "Next.js",
   keywords: "portifolio, cleber lopes, desenvolvedor, front-end",
   publisher: "Vercel",
   openGraph: {
-    title: "Lobster Site - Cleber Lopes",
+    title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lobster Site - Cleber Lopes",
+    title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creator: "Cleber Lopes",
     images: "/public/cover.png",

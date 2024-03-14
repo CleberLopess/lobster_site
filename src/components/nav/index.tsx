@@ -91,6 +91,11 @@ const Nav = () => {
                 Certificados
               </a>
             </li>
+            <li className="hover:scale-110">
+              <a href="#artigos" onClick={toggleNavbar}>
+                Artigos
+              </a>
+            </li>
           </ul>
           <div className="mt-4">
             <Button
@@ -122,6 +127,9 @@ const Nav = () => {
           </li>
           <li className="hover:scale-110">
             <a href="#certificados">Certificados</a>
+          </li>
+          <li className="hover:scale-110">
+            <a href="#artigos">Artigos</a>
           </li>
         </ul>
         <div className="ml-auto">
