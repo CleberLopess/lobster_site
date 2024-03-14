@@ -3,6 +3,7 @@ import lobsterLogo from "/public/lobster-not-botton.png";
 import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lobster-site.vercel.app/"),
   applicationName: "Portifólio Cleber Lopes",
   title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
   description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
-    images: "../../public/cover.png",
+    images: "public/cover.png",
     url: "https://lobster-site.vercel.app/",
   },
   twitter: {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creator: "Cleber Lopes",
-    images: "../../public/cover.png",
+    images: "public/cover.png",
   },
 };
 
