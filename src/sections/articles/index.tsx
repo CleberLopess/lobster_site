@@ -31,7 +31,7 @@ const Articles = () => {
             aprendizados e experiências.
           </p>
         </div>
-        <div>{setCards()}</div>
+        <div className="flex gap-5 justify-center flex-wrap">{setCards()}</div>
       </div>
     </section>
   );
