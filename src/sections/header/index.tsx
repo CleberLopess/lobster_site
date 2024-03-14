@@ -19,6 +19,7 @@ const Header = () => {
         className="w-20 flex justify-center absolute bottom-0"
         src={arrowGif}
         alt="arrow grif"
+        loading="lazy"
       />
     </header>
   );
