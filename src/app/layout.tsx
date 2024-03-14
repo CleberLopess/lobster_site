@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     creators: "Cleber Lopes",
     emails: "cleberlopes777@gmail.com",
     images: "../../public/cover.png",
+    url: "https://lobster-site.vercel.app/",
   },
   twitter: {
     card: "summary_large_image",
