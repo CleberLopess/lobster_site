@@ -35,7 +35,7 @@ const Projects = () => {
         className="flex justify-center items-center bg-light-bg-01 dark:bg-dark-bg-01 "
       >
         <div className="container py-20 mx-auto flex flex-col gap-16">
-          <div className="flex flex-col gap-8">
+          <div className="font-Poppins text-base flex flex-col gap-8">
             <h2>Projetos</h2>
             <p className="text-center">
               Aqui, voce vai saber sobre os projetos que ja participei, ao
