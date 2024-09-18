@@ -8,8 +8,18 @@ import certificatePyton from "./assets/certificate-pyton.jpg";
 import certificateJavaScript from "./assets/certificate-javaScript.jpg";
 import certificateOrganização from "./assets/certificate-organizaçãoDeEquipe.png";
 import certificateScrum from "./assets/certificate-scrum.png";
+import certificateArquiteturaLimpa from "./assets/certificate-arquiteturaLimpa.jpg";
 
 export const mockCertificate: cardCertificateType[] = [
+  {
+    handleClickCardCertificate: () =>
+      window.open(
+        "https://www.udemy.com/certificate/UC-f7d2f505-f482-4419-acf3-d1fb4fb38eba/",
+        "blank"
+      ),
+    image: certificateArquiteturaLimpa,
+    title: "Domine a arquitetura limpa e hexagonal",
+  },
   {
     handleClickCardCertificate: () =>
       window.open(
