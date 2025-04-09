@@ -3,22 +3,22 @@ import lobsterLogo from "/public/lobster-not-botton.png";
 import "../styles/tailwind-global.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lobster-site.vercel.app/"),
+  metadataBase: new URL("https://www.cleberlobster.com.br/"),
   applicationName: "Portifólio Cleber Lopes",
-  title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
+  title: "Cleber Lopes - Desenvolvedor front-end",
   description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
   creator: "Cleber Lopes",
   generator: "Next.js",
   keywords: "portifolio, cleber lopes, desenvolvedor, front-end, lobster",
   publisher: "Vercel",
   openGraph: {
-    url: "https://lobster-site.vercel.app/",
-    title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
+    url: "https://www.cleberlobster.com.br/",
+    title: "Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creators: "Cleber Lopes",
     images: [
       {
-        url: "https://lobster-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
+        url: "https://www.cleberlobster.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
         width: 800,
         height: 600,
       },
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lobster Site - Cleber Lopes - Desenvolvedor front-end",
+    title: "Cleber Lopes - Desenvolvedor front-end",
     description: "Portifólio pessoal do Cleber Lopes - Desenvolvedor front-end",
     creator: "Cleber Lopes",
     images: [
       {
-        url: "https://lobster-site.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
+        url: "https://www.cleberlobster.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportifolio.2dbe1cde.png&w=1920&q=75",
         width: 800,
         height: 600,
       },
